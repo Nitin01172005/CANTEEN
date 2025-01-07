@@ -5,8 +5,9 @@ import Image1 from '../assets/rb_10377.png';
 import Image2 from '../assets/delicious-3d-food-illustrated.png';
 import Image3 from '../assets/delicious-pizza-with-emojis.png';
 import Slider from 'react-slick';
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+
 
 const  ImageList = [
  { id: 1,
