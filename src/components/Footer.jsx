@@ -19,47 +19,34 @@ const BannerImg = {
 const FooterLinks = [
   {
     title: "Home",
-    link: "/#",
+    link: "/home",
   },
   {
     title: "About",
-    link: "/#about",
+    link: "#about",
   },
   {
-    title: "Contact",
-    link: "/#contact",
+    title: "menu",
+    link: "#menu",
   },
   {
-    title: "Blog",
-    link: "/#blog",
+    title: "Top rated",
+    link: "#TopProducts",
   },
 ]
 const Footer = () => {
   return (
     <div style={BannerImg} data-aos="fade-up" className='text-white pb-10 bg-gray-800'>
       <div className='container'>
-        <div className='grid py-8 gap-x-28 grid-cols-1 md:grid-cols-4 sm:my-8'>
+        <div className='grid py-8 gap-[240px] grid-cols-1 md:grid-cols-3 sm:my-8'>
           <div data-aos="fade-up">
 
               <a href="/#" className='flex flex-row font-bold text-2xl gap-2 '><img src={FooterLogo} alt="img" className='max-w-[50px] contain' /> <span className='pt-2'>Bite & Sip</span> </a>
 
-              
+              <p className='py-10'>Enjoy a cozy atmosphere, delicious meals, freshly brewed coffee, and exceptional service at our vibrant, welcoming cafe.</p> 
             
           </div>
-          <div>
-            <div data-aos="fade-up">
-              <h1 className='font-bold text-2xl py-2 pb-4 sm:text-2xl'>Important Links</h1> 
-             <ul className='flex flex-col gap-3'>
-             {
-                  FooterLinks.map((link) => (
-                    <li className='cursor-pointer hover:text-primary hover:translate-x-1 duration-300 text-gray-200' key={link.title}>
-                      <span>{link.title} </span>
-                    </li>
-                  ))
-                }
-             </ul>
-            </div>
-          </div>
+         
           <div>
             <div data-aos="zoom-in">
             <h1 className='font-bold text-2xl py-2 pb-4 sm:text-2xl'> Links</h1>
@@ -67,7 +54,7 @@ const Footer = () => {
                 {
                   FooterLinks.map((link) => (
                     <li className='cursor-pointer hover:text-primary hover:translate-x-1 duration-300 text-gray-200' key={link.title}>
-                      <span>{link.title} </span>
+                      <a href={link.link}>{link.title} </a>
                     </li>
                   ))
                 }

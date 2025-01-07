@@ -1,6 +1,6 @@
 import React from 'react'
 import Img1 from '../assets/HALL.jpeg';
-import Img2 from '../assets/Röe_gård_café_2.jpg';
+import Img2 from '../assets/cafe.jpg';
 import Aos from 'aos';
 import Img4 from '../assets/pexels-igor-starkov-233202-1307698.jpg';
 
@@ -8,7 +8,7 @@ import Img4 from '../assets/pexels-igor-starkov-233202-1307698.jpg';
 const About = () => {
   return (
     <div className='flex h-14 bg-gradient-to-r from-violet-200 to-gray-700  justify-center items-center min-h-screen'>
-      <div className='container flex flex-col items-center text-center mt-5'>
+      <div className='container flex flex-col items-center text-center mt-5' id='about'>
 
          <h1 className='text-5xl font-bold' 
                      data-aos="zoom-out"
