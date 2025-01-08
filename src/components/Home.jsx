@@ -42,10 +42,6 @@ const Hero = ({handleOrderPopup}) => {
     pauseOnFocus: true,
   };
 
-  const navigateToLogin = () => {
-    window.location.href = '/Login';
-  };
-
   return (
     <div id='home' className='relative overflow-hidden min-h-[750px] sm:min-h-[850px] bg-gradient-to-r from-violet-200 to-gray-500 flex justify-center items-center duration-200'>
       {/* background pattern */}
@@ -55,7 +51,7 @@ const Hero = ({handleOrderPopup}) => {
       <div className='container pb-8 sm:pb-0'>
         <Slider {...settings}>
           {ImageList.map((data) => (
-                 <div key={data.id}>
+                 <div>
                  <div className='grid grid-cols-1 sm:grid-cols-2'>
                    <div className='flex flex-col justify-center gap-4 pt-12 sm:pt-0 sm:text-left order-2 sm:order-1 relative z-10'>
                      <h1 
@@ -74,13 +70,13 @@ const Hero = ({handleOrderPopup}) => {
                       data-aos-duration="500"
                       data-aos-delay="300"
                    >
-                     <button onClick={navigateToLogin}
+                     <button   onClick={() => handleOrderPopup()}
                      className='bg-gradient-to-r from-primary to-secondary hover:scale-105 duration-200 text-white y-2 px-4 rounded-full'>Order now</button>
                    </div>
                  </div>
                  <div className='order-2 sm:order-1' >
                    <div className='z-10' 
-                   data-aos="zoom-out-left"
+                   data-aos="zoom-in"
                    data-aos-once="true">
                     <img src={data.img} alt="" className='w-[300px] z-10 h-[500px] sm:h-[450px] sm:w-[450px] sm:scale-125 object-contain mx-auto lg:scale-125 hover:scale-150 duration-200' />  
                    </div>
