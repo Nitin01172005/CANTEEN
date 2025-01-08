@@ -47,8 +47,8 @@ function App() {
             path="/"
             element={
               <>
-                <About />
                 <Home handleOrderPopup={handleOrderPopup} />
+                <About />
                 <Products handleOrderPopup={handleOrderPopup} />
                 <TopProducts handleOrderPopup={handleOrderPopup} />
                 <Banner />
