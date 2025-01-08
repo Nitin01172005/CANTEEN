@@ -109,35 +109,35 @@ const Products = ({handleOrderPopup}) => {
       <div className='container'>
         {/* --heqader section */}
         <div className='text-center mb-10 max-w-[600px] mx-auto'>
-          <p data-aos="fade-up" className='text-sm '>Top Selling food for You</p>
+          <p data-aos="fade-up" className='text-lg '>Top Selling food for You</p>
           <h1 data-aos="fade-up"
-           className='text-3xl font-bold '>Menu</h1>
-          <p data-aos="fade-up" className='text-xs text-gray-800 '>Juicy burgers with melted cheese are perfect for summer cookouts..</p>
+           className='text-4xl font-bold py-4'>Menu</h1>
+          <p data-aos="fade-up" className='text-md text-gray-800 '>Juicy burgers with melted cheese are perfect for summer cookouts..</p>
         </div>
         {/* body */}
         <div>
-          <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 place-items-center gap-15 pb-4'>
+          <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  place-items-center justify-items-center justify-center gap-15 pb-4'>
             {
               ProductsData.map((data) => (
                 <div
-                data-aos="fade-up"
+                data-aos="zoom-out-left"
                 data-aos-delay= {data.aosDelay} 
                 key={data.id}
                 className='space-y-3'
                 >
                   <img src={data.img} alt="" 
-                  className='h-[220px] w-[150px] object-cover rounded-md'
+                  className='h-[220px] w-[250px] object-cover rounded-xl'
                   />
                   <div>
                     <h3 className='font-semibold mt-2 mb-1'>{data.title}</h3>
-                    <p className='text-sm text-gray-700'>{data.author}</p>
+                    <p className='text-xl text-gray-700'>{data.author}</p>
                   </div>
                   <div className='flex items-center gap-2'>
                     <FaStar className='text-yellow-500' />
                     <span>{data.rating}</span>
                   </div>
                   <div>
-                  <button   onClick={() => handleOrderPopup()}
+                  <button onClick={() => handleOrderPopup()}
                   className='bg-white px-4 py-1 mb-2 hover:scake-105 duration-300 text-black rounded-full group-hover:bg-white group-hover:text-primary'>Order now</button>
                   </div>
                 </div>
