@@ -36,10 +36,10 @@ const TopProducts = ({handleOrderPopup}) => {
       <div className='container'>
         {/* header-section */}
         <div className='text-center mb-24 pb-20'>
-          <p data-aos="fade-up" className='text-primary text-sm '>Top Rated Products for You</p>
+          <p data-aos="fade-up" className='text-primary text-md '>Top Rated Products for You</p>
           <h1 data-aos="fade-up"
-           className='text-3xl font-bold '>Best Products</h1>
-          <p data-aos="fade-up" className='text-xs text-gray-900 '>Stylish, comfortable, breathable, durable, trendy, versatile, timeless, elegant.</p>
+           className='text-5xl py-2 font-bold '>Best Products</h1>
+          <p data-aos="fade-up" className='text-md text-gray-900 '>Stylish, comfortable, breathable, durable, trendy, versatile, timeless, elegant.</p>
         </div>
 
         <div className='grid grid-cols-3 sm:grid-cols-2 md:grid-cols-3 gap-20 md:gap-5 place-items-center'>

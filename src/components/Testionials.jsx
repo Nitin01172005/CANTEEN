@@ -77,8 +77,8 @@ const Testionials = () => {
         <div className='text-center mb-10 max-w-[600px] mx-auto'>
           <p data-aos="fade-up" className='text-primary text-sm '>What Our Customers are saying</p>
           <h1 data-aos="zoom-in"
-           className='text-3xl font-bold  dark:text-white'>Testmonials</h1>
-          <p data-aos="fade-up" className='text-xs text-gray-400 '>
+           className='text-5xl font-bold  dark:text-white py-2'>Testmonials</h1>
+          <p data-aos="fade-up" className='text-lg text-gray-300 '>
           Genuine, heartfelt, authentic, insightful, positive, detailed, trustworthy, relatable, convincing,</p>
         </div>
         <div data-aos="zoom-in">
@@ -90,7 +90,7 @@ const Testionials = () => {
                 <div className='mb-4'><img src={data.img} alt="" className='rounded-full w-20 h-20 '/></div>
                 <div className='flex flex-col items-center gap-4'>
                   <div className='space-y-3'>
-                   <p className='text-xs text-gray-500'>{data.text}</p>
+                   <p className='text-md text-gray-300'>{data.text}</p>
                 <h1 className='text-xl font-bold text-black/80 dark:text-white'>{data.name} </h1>
               </div>
               </div> 

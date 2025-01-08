@@ -64,9 +64,10 @@ const Footer = () => {
           <div data-aos="zoom-in">
             <div className='flex flex-col items-left gap-6 py-2 sm:py-4'>
               <div className='flex gap-3'>
-                <FaInstagram size={30} />
-                <FaFacebook  size={30}/>
-                <FaLinkedin  size={30}/>
+               <a href="https://www.instagram.com/"> <FaInstagram size={30} /> </a>
+                <a href="https://www.facebook.com/"><FaFacebook  size={30}/> </a> 
+                <a href="https://in.linkedin.com/"><FaLinkedin  size={30}/> </a>
+                
                 </div>
               <div className='flex gap-3 items-center'>
                 <FaLocationArrow />
