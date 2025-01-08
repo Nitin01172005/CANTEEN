@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import { FaCartShopping } from "react-icons/fa6";
 import Logo from '../assets/bite.png'
 import { IoMdSearch } from "react-icons/io";
@@ -12,6 +13,8 @@ const Navbar = () => {
           <a data-aos="zoom-in" href="#TopProducts" className="text-gray-800 no-underline hover:text-black hover:font-bold hover:scale-x-110 hover:scale-y-110 duration-200">Top Rated</a>
           <a data-aos="zoom-in" href="#menu" className="text-gray-800 no-underline hover:text-black hover:font-bold hover:scale-x-110 hover:scale-y-110 duration-200">Menu</a>
           
+          <Link to="/login">Login</Link>
+
           <a data-aos="zoom-in" href="#subscription" className="text-gray-800 no-underline hover:text-black hover:font-bold hover:scale-x-110 hover:scale-y-110 duration-200">Subscription</a>
           <a data-aos="zoom-in" href="#menu" className="text-gray-800 no-underline hover:text-black hover:font-bold hover:scale-x-110 hover:scale-y-110 duration-200">Order <span> </span> </a>
 
@@ -20,8 +23,8 @@ const Navbar = () => {
            <input type="text" 
              data-aos="fade-left"
              placeholder='search' 
-             className='w-[200px] sm:w-[200px] duration-300 border rounded-full shadow-xl  border-gray-400 px-2 py-1 focus:outline-none focus:border
-             focus:border-yellow-300  focus:bg-gray-400 focus:w-[300px]' />
+             className="w-[200px] sm:w-[200px] duration-300 transition-all ease-in-out border rounded-full shadow-xl bg-gradient-to-r from-violet-200 to-gray-700 border-gray-400 px-2 py-1 hover:outline-none hover:border hover:border-yellow-700 hover:bg-gray-300 hover:w-[300px] focus:w-[300px] focus:border-yellow-700"
+             style={{ transition: 'width 0.3s ease-in-out' }} />
              <IoMdSearch className='text-gray-500 group-hover:text-primary absolute top-1/2 -translate-y-1/2 right-3' />
       </nav>
     </div>
