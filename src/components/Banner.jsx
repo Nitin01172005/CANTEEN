@@ -14,7 +14,7 @@ const Banner = () => {
             <img className='max-w-[500px] h-[450px] w-full mx-auto drop-shadow-[-10px_10px_12px_rgba(0,0,0,1)] object-contain' src={BannerImg} alt="banner" />
           </div>
           <div className='flex flex-col justify-center gap-6 sm:pt-0'>
-            <h1 data-aos="fade-up" className='text-3xl sm:text-4xl font-bold'>Winter Sale Upto 10% Off</h1>
+            <h1 data-aos="fade-up" className='text-4xl sm:text-5xl text-blue-200 font-bold'>Winter Sale Upto 10% Off</h1>
             
             <div className='flex flex-col gap-4 '>
               <div data-aos="fade-up-left" data-aos-delay="400" className='flex transition-all duration-200 gap-4 items-center'>

@@ -10,6 +10,8 @@ import Img7 from  '../assets/sauteed-mushrooms-with-pumpkin-sweet-pepper.jpg'
 import Img8 from  '../assets/overhead-view-chicken-pad-thai-noodles-bowl.jpg'
 import Img9 from  '../assets/delicious-food-table.jpg'
 import Img10 from  '../assets/bakedpotato.jpg'
+import Img11 from '../assets/roll.jpeg'
+import Img12 from '../assets/fire.jpeg'
 
 
 import { FaStar } from 'react-icons/fa6'
@@ -105,10 +107,28 @@ const ProductsData = [
     img:  Img10,
     title: "baked potato",
     price: "₹ 70",
-    rating: 4.0,
+    rating: 4.8,
 
     aosDelay: "300",
   },
+  {
+    id:11,
+    img:  Img11,
+    title: "Spring Roll",
+    price: "₹ 80",
+    rating: 4.2,
+
+    aosDelay: "300",
+  },
+  {
+    id:12,
+    img:  Img12,
+    title: "Platter",
+    price: "₹ 170",
+    rating: 4.0,
+
+    aosDelay: "300",
+  }
 
 
 ];

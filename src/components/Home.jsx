@@ -1,9 +1,9 @@
 import 'aos/dist/aos.css';
 /* eslint-disable react/jsx-key */
 import React from 'react'
-import Image1 from '../assets/rb_10377.png';
+import Image1 from '../assets/delicious-pizza-with-emojis.png';
 import Image2 from '../assets/delicious-3d-food-illustrated.png';
-import Image3 from '../assets/delicious-pizza-with-emojis.png';
+import Image3 from '../assets/rb_10377.png';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -11,7 +11,7 @@ import "slick-carousel/slick/slick-theme.css";
 const  ImageList = [
  { id: 1,
   img: Image1,
-  title: "Upto 10% off on all on Monday",
+  title: "Upto 10% off on all on Monday on Pizza",
   Description: "Extensive listings of various food items such as pizza, Coffe, deserts etc.",},
 
   { id: 2,
@@ -58,25 +58,27 @@ const Hero = ({handleOrderPopup}) => {
                      data-aos="fade-down"
                      data-aos-duration="800"
                      data-aos-once="false"
+                     data-aos-delay="1600"
                      className='text-5xl sm:text-6xl lg:text-7xl font-bold'>{data.title} </h1>
                      <p 
                      data-aos="fade-up"
                       data-aos-duration="300"
                       data-aos-delay="100"
-                     className='text-sm'>{data.Description}</p>
+                     className='text-md'>{data.Description}</p>
                    
                    <div
                       data-aos="fade-up"
                       data-aos-duration="500"
-                      data-aos-delay="1300"
+                      data-aos-delay="1000"
                    >
                      <button   onClick={() => handleOrderPopup()}
-                     className='bg-gradient-to-r from-primary to-secondary hover:scale-105 duration-200 text-white y-2 px-4 rounded-full'>Order now</button>
+                     className='bg-gradient-to-r from-primary to-secondary hover:scale-125 duration-200 text-white y-2 px-4 rounded-full'>Order now</button>
                    </div>
                  </div>
                  <div className='order-2 sm:order-1' >
                    <div className='z-10' 
                    data-aos="zoom-in"
+                   data-aos-delay="2200"
                    data-aos-once="true">
                     <img src={data.img} alt="" className='w-[300px] z-10 h-[500px] sm:h-[450px] sm:w-[450px] sm:scale-125 object-contain mx-auto lg:scale-125 hover:scale-150 duration-200' />  
                    </div>
