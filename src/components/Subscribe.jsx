@@ -20,8 +20,12 @@ const Subscribe = () => {
         <div className='text-center  max-w-[640px] mx-auto'>
           <h1 className='text-3xl font-bold pb-6 text-white'>Get Notified About New Products</h1>
           <div className="flex flex-row gap-10">
+            <form action="#">
             <input data-aos="fade-up" type="text" placeholder='Enter Your Email' className='pl-4 py-4 w-[500px] mb-2' />
-            <button className='rounded-3xl w-[90px] text-gray-900 bg-gray-100'>submit</button>
+                      
+            <button className='rounded-3xl w-[90px] py-2 hover:scale-125 ml-10 text-gray-900 bg-gray-100'>submit</button>
+            </form>
+ 
           </div>
           </div>
           
