@@ -19,8 +19,12 @@ const Subscribe = () => {
       <div className='container backdrop-blur-sm py-10'>
         <div className='text-center  max-w-[640px] mx-auto'>
           <h1 className='text-3xl font-bold pb-6 text-white'>Get Notified About New Products</h1>
-          <input data-aos="fade-up" type="text" placeholder='Enter Your Email' className='pl-4 py-4 w-[500px] mb-2' />
-        </div>
+          <div className="flex flex-row gap-10">
+            <input data-aos="fade-up" type="text" placeholder='Enter Your Email' className='pl-4 py-4 w-[500px] mb-2' />
+            <button className='rounded-3xl w-[90px] text-gray-900 bg-gray-100'>submit</button>
+          </div>
+          </div>
+          
       </div>
      
       </div>
