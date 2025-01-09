@@ -18,6 +18,7 @@ const ProductsData = [
     id:1,
     img:  Img1,
     title: "Rosoto garlic",
+    price: "₹ 120",
     rating: 5.0,
     
     aosDelay: "0",
@@ -27,6 +28,7 @@ const ProductsData = [
     id:2,
     img:  Img2,
     title: "pulses soup",
+    price: "₹ 100",
     rating: 4.5,
 
     aosDelay: "200",
@@ -36,6 +38,7 @@ const ProductsData = [
     id:3,
     img:  Img3,
     title: "Coffe mocha",
+    price: "₹ 80",
     rating: 4.0,
 
     aosDelay: "400",
@@ -45,6 +48,7 @@ const ProductsData = [
     id:4,
     img:  Img4,
     title: "Mushroom Salad",
+    price: "₹ 140",
     rating: 4.4,
 
     aosDelay: "300",
@@ -54,6 +58,7 @@ const ProductsData = [
     id:5,
     img:  Img5,
     title: "Burgirrrrrr",
+    price: "₹ 90",
     rating: 4.4,
 
     aosDelay: "300",
@@ -62,6 +67,7 @@ const ProductsData = [
     id:6,
     img:  Img6,
     title: "Paratha",
+    price: "₹ 60",
     rating: 4.4,
 
     aosDelay: "300",
@@ -70,6 +76,7 @@ const ProductsData = [
     id:7,
     img:  Img7,
     title: "Mushroom Salad with honey",
+    price: "₹ 100",
     rating: 4.4,
 
     aosDelay: "300",
@@ -78,6 +85,7 @@ const ProductsData = [
     id:8,
     img:  Img8,
     title: "Noodles",
+    price: "₹ 100",
     rating: 4.4,
 
     aosDelay: "300",
@@ -86,6 +94,7 @@ const ProductsData = [
     id:9,
     img:  Img9,
     title: "Indian Thali",
+    price: "₹ 120",
     rating: 4.4,
 
     aosDelay: "300",
@@ -95,6 +104,7 @@ const ProductsData = [
     id:10,
     img:  Img10,
     title: "baked potato",
+    price: "₹ 70",
     rating: 4.0,
 
     aosDelay: "300",
@@ -131,6 +141,9 @@ const Products = ({handleOrderPopup}) => {
                   <div>
                     <h3 className='font-semibold mt-2 mb-1'>{data.title}</h3>
                     <p className='text-xl text-gray-700'>{data.author}</p>
+                  </div>
+                  <div>
+                  <h3 className='font-semibold mt-2 mb-1'>{data.price}</h3>
                   </div>
                   <div className='flex items-center gap-2'>
                     <FaStar className='text-yellow-500' />
