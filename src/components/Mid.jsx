@@ -12,8 +12,8 @@ const Mid = () => {
       <div className='flex justify-between text-black dark:white'>
         <div data-aos="zoom-in" className='flex gap-4'><FaCarSide className='text-red-700 ' size={42} />
         <div className='flex-col'>
-          <p className='font-bold text-lg text-gray-100'>Free Shipping</p>
-          <p className='text-sm text-gray-400'>Free Shiping On All Order</p>
+          <p className='font-bold text-lg text-gray-100'>No ques</p>
+          <p className='text-sm text-gray-400'>fast delievry of Order</p>
         </div>
         </div>
         <div data-aos="zoom-in" className='flex gap-4'><TiTick className='text-red-700 ' size={42}/>
